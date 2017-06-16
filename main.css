@@ -1,0 +1,843 @@
+body {
+    margin: 0;   
+    background-color: #eaeaea;
+}
+
+#header {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url('images/panorama_split.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#nav {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+}   
+
+#logo {
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+#logo_text {
+    position: absolute;
+    display: inline;
+    top: -5px;
+    left: 55px;
+    font-size: 22px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}   
+
+#host_link {
+    display: inline;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+    float: right;
+    margin: 12px;
+    border: 2px solid white;
+    padding: 8px;
+    border-radius: 2px;
+}
+
+#host_link:visited {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+}
+
+#host_link:hover {
+    background-color: rgba(0, 0, 0, 0.4);   
+}
+
+.nav_links {
+    display: inline;
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+    float: right;
+    margin: 12px;
+    margin-top: 15px;
+    padding: 8px;
+}
+
+.nav_links:hover {
+    color: #a7a7a7;
+}
+
+.nav_links:active {
+    color: dimgray;
+}
+
+#welcome_text_div {
+    position: absolute;
+    width: 800px;
+    height: 300px;
+    top: 50%;
+    margin-top: -150px;
+    left: 50%;
+    margin-left: -400px;
+}
+
+#welcome_text {
+    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 55px;
+    text-align: center;
+}
+
+#welcome_under_text {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-top: -50px;
+}   
+
+#how_it_works:link {
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 30px 10px 30px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 50%;
+    margin-left: -80px;
+}
+
+#how_it_works:visited {
+    font-family: sans-serif;
+    color: white;
+    text-deocration: none;
+}   
+
+#how_it_works:hover {
+    background-color: rgba(0, 0, 0, 0.5);   
+    color: white;
+}
+
+#searchbar_div {
+    position: absolute;  
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+}
+
+#searchbar {
+    position: absolute;
+    width: 840px;
+    height: 45px;
+    background-color: white;
+    top: 50%;
+    margin-top: -22.5px;
+    left: 50%;
+    margin-left: -400px;
+    border-radius: 3px;
+}
+
+#where_div {
+    position: absolute;
+    width: 400px;
+    height: 45px;
+    border-right: 1px solid lightgray;
+}
+
+#where_text {
+    color: gray;
+    font-family: sans-serif;
+    margin-left: 15px;
+}
+
+#check_in_div {
+    position: absolute;
+    width: 110px;
+    height: 45px;
+    border-right: 1px solid lightgray;
+    left: 400px;
+}
+
+#check_in_text {
+    font-family: sans-serif;
+    color: gray;
+    margin-left: 15px;
+}
+
+#check_out_div {
+    position: absolute;
+    width: 110px;
+    height: 45px;
+    border-right: 1px solid lightgray;
+    left: 510px;    
+}
+
+#check_out_text {
+    font-family: sans-serif;
+    color: gray;
+    margin-left: 15px;
+}
+
+#guest_div {
+    position: absolute;
+    width: 110px;
+    height: 45px;
+    border-right: 1px solid lightgray;
+    left: 620px;   
+}
+
+#guest_text {
+    font-family: sans-serif;
+    color: gray;
+    margin-left: 15px;
+}
+
+#search_button_div {
+    position: absolute;
+    width: 110px;
+    height: 45px;
+    left: 730px;
+}
+
+#search_button:link {
+    position: absolute;
+    font-family: sans-serif;
+    background-color: #ff3655;
+    color: white;
+    text-decoration: none;
+    padding: 13.5px 30px 13.5px 30px;
+    border-radius: 3px;
+}   
+
+#search_button:visited {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+#search_button:hover {
+    background-color: #ff5b74;   
+}
+
+#hosting_opportunity_div {
+    position: relative;
+    width: 950px;
+    height: 300px;
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#hosting_opportunity_div_1 {
+    position: absolute;
+    width: 330px;
+    height: 100%;
+}
+
+#hosting_opportunity_div_2 {
+    position: absolute;
+    width: 620px;
+    height: 100%;
+    /*background-image: url('family.jpg');
+    background-size: cover; */
+    right: 0;
+}
+
+#hosting_opportunity_text {
+    position: absolute;
+    font-family: 'Circular', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-weight: bold;
+    color: #545454;
+    font-size: 22px;
+    left: 50%;
+    margin-left: -110px;
+    top: 30px;
+}
+
+#earn_money_text {
+    position: absolute;
+    font-family: sans-serif;
+    color: #545454;
+    left: 50%;
+    margin-left: -110px;
+    top: 120px;
+}
+
+#what_earn_link:link {
+    position: absolute;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    background-color: #25898b;
+    padding: 15px 30px 15px 30px;
+    text-decoration: none;
+    border-radius: 2px;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -120px;
+    box-shadow: 0px 1px black;
+}
+
+#what_earn_link:visited {
+    color: white;   
+}
+
+#what_earn_link:hover {
+    background-color: #17acb0;   
+}
+
+#what_earn_link:active {
+    background-color: #256a6b;   
+}
+
+#explore_the_world_text {
+    color: #545454;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#people_traveling_text {
+    font-family: sans-serif;
+    color: #545454;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+
+#places-container
+{
+    margin-left: 33px;
+    
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+#card-places .card{ 
+    display: inline-block;
+    width: 380px;
+    height: 550px;
+    position: relative;
+    margin-right: 20px;
+    background-color: #83a8ca;
+    padding: 15px;
+    border-radius: 4px;
+    
+}
+
+.card img
+{
+    height: 350px;
+    max-width: 100%;
+    vertical-align: middle;
+    padding-bottom: 20px;
+} 
+
+.button_comment
+{
+    border-radius: 5px;
+    border: 2px solid gray;
+    background-color:  #545454;
+    padding: 15px;
+    height: auto;
+}
+
+#comments
+{
+    margin-left: 65px;
+    border-radius: 3px;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding-bottom: 10px
+    
+   
+    
+}
+
+#add_comment
+{
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-left: 150px;
+    cursor: pointer;
+    padding: 5px;
+    border-top: 10px;
+}
+#apartments
+{
+
+    margin-top:  30px;
+    padding-top: 80px;
+
+    background-image: url('http://4.bp.blogspot.com/-k0CW9ErqA2c/UUR16FUv04I/AAAAAAAAACQ/pIrKNcklGp0/s1600/brijuni_02_1274804503.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 40px;
+    height: 600px;
+}
+
+#card-apartments .card
+{
+    display: inline-block;
+    width: 400px;
+    height: 480px;
+    margin-right: 23px;
+    border-radius: 2px;
+    background-color: #83a8ca;
+    
+}
+
+#card-apartments .card .img
+{
+    height: 400px;
+}
+
+
+.rating
+{
+    font-family: sans-serif;
+    margin-left: 13px;
+    font-size: 20px;
+    
+    
+}
+
+.rating span
+{
+    font-size: 35px;
+}
+
+
+
+
+/*
+
+#newyork_william_div {
+    position: relative;
+    width: 950px;
+    height: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+}
+
+#newyork_div {
+    position: absolute;
+    width: 625px;
+    height: 100%;
+    background-image: url('newyork.jpg');
+    background-size: cover;
+    margin-right: 25px;
+}
+
+#newyork_link:link {
+    position: absolute;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 157.5px 233px 157.7px 233px;
+    top: 0;
+    font-size: 35px;
+}
+
+#newyork_link:visited {
+    color: white;   
+}
+
+#william_div {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background-image: url('william_home.jpg');
+    background-size: cover;
+    right: 0;
+}
+
+#william_profile_div {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 65px;
+    background-image: url('william.jpg');
+    background-size: cover;
+    left: 50%;
+    margin-left: -32.5px;
+    top: 100px;
+    border: 2px solid white;
+}
+
+#william_home_text {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    margin-top: 190px;
+}
+
+#william_city_text {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: -20px;
+}
+
+#william_home_price_div {
+    position: relative;
+    margin-top: 40px;
+    width: 80px;
+    height: 40px;
+    background-color: rgba(94, 94, 94, 0.8);
+}
+
+#william_home_price_text {
+    font-family: sans-serif;
+    color: white;
+    font-size: 27px;
+    text-align: center;
+}
+
+.small_dollar_sign {
+    position: absolute;
+    font-size: 15px;   
+    top: 8px;
+    left: 8px;
+}
+
+#hawaii_paris_barcelona_div {
+    position: relative;
+    width: 950px;
+    height: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;  
+}
+
+#hawaii_div {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    margin-right: 25px;
+    background-image: url('hawaii.jpg');
+    background-size: cover;
+    background-position: -150px;
+}
+
+#paris_div {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    margin-right: 25px;
+    background-image: url('paris.jpg');
+    background-size: cover;
+    background-position: center;
+    left: 325px;
+}
+
+#barcelona_div {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    margin-right: 25px;
+    background-image: url('barcelona.jpg');
+    background-size: cover;
+    background-position: -50px;
+    left: 650px;
+}
+
+.three_thumnail_text {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 27px;
+    margin-top: 140px;
+}
+
+#milan_and_shome {
+    position: relative;
+    width: 950px;
+    height: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;  
+}
+
+#sarah_div {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background-image: url('sarah_home.jpeg');
+    background-size: cover;
+    left: 0;
+}
+
+#milan_div {
+    position: absolute;
+    width: 625px;
+    height: 100%;
+    background-image: url('milan.jpg');
+    background-size: cover;
+    margin-left: 25px; 
+    right: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#sarah_profile_div {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 65px;
+    background-image: url('sarah.jpg');
+    background-size: cover;
+    left: 50%;
+    margin-left: -32.5px;
+    top: 100px;
+    border: 2px solid white; 
+}
+
+#sarah_home_text {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    margin-top: 190px;
+}
+
+#sarah_city_text {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: -20px;
+}
+
+#milan_text {
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    font-size: 35px;  
+    margin-top: 150px;
+}
+
+#slidy-container {
+    position: relative;
+    width: 100%; 
+    height: 600px;
+    overflow: hidden;
+    z-index: -1;
+}
+*/
+
+#slidy { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 480px;
+    background-color: gray;
+    margin-top: 25px;
+}
+
+#footer_main {
+    position: absolute;
+    width: 860px;
+    height: 360px;
+    margin-top: 40px;
+    left: 50%;
+    margin-left: -400px;
+    border-bottom: 1px solid lightgray;
+}
+
+#language_div {
+    position: relative;
+    width: 250px;
+    height: 50px;
+    background-color: #606060;
+    border-radius: 3px;
+}
+
+.arrow {
+    font-size: 15px;
+    font-weight: bold;
+    color: #a9a9a9;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+#language_div p {
+    font-family: sans-serif;
+    color: white;
+    font-size: 18px;
+    padding-top: 15px;
+    margin-left: 15px;
+}
+
+#currency_div {
+    position: relative;
+    width: 250px;
+    height: 50px;
+    background-color: #606060;
+    border-radius: 3px;
+    margin-top: -5px;
+}
+
+#currency_div p {
+    font-family: 'Circular', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;;
+    color: white;
+    font-size: 18px;
+    padding-top: 15px;
+    margin-left: 15px;
+}
+
+#footer_info_table {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: -10px;
+}
+
+#footer_info_table td {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.table_title {
+    color: white;
+    font-family: 'Circular', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#footer_info_table a:link {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Circular', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    display: block;
+    margin-top: 3px;
+}
+
+#footer_info_table a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+#footer_info_table a:hover {
+    color: #9a9a9a;
+}
+
+#footer_info_table a:active {
+    color: dimgray;
+}
+
+#footer_social {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -300px;
+}
+
+#join_us_p {
+    font-family: 'Circular', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 0;
+}
+
+#social_links_div {
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    left: 50%;
+    margin-left: -250px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#social_link_div_wrapper {
+    position: absolute;
+  
+    
+    
+    
+}
+
+.social-icon
+{
+    display:inline-block
+   
+    
+}
+
+
+
+.social_link_div {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    border: 1px solid white;
+    text-align: center;
+    
+}
+
+
+
+.social_link_div a:link {
+    font-family: 'Circular', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    top: 6px;
+    margin-left: -4px;
+}
+
+.social_link_div a:visited {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.social_link_div a:hover {
+    color: lightgray;
+}
+
+.social_link_div a:active {
+    color: darkgray;
+}
+
+#airbnb_inc_p {
+    font-family: 'Circular', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    color: dimgray;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 70px;
+}
